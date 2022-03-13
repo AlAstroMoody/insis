@@ -1,0 +1,17 @@
+@import './reset';
+@import './typography';
+
+:root {
+    --background: #F5F5F5;
+    --color: #2F353D;
+    --sub-color: #aeaeae;
+    --dark-color: #767676;
+    --sub-background: #EBEBEB;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Proxima Nova', 'Segoe UI', Roboto, Oxygen, Ubuntu,
+  Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: var(--color);
+}

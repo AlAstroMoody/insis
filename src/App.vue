@@ -1,20 +1,18 @@
 <template>
   <SideBar @unit-selection="changeUnit" :unit="activeUnit" />
-  <transition-group name="shift" mode="out-in">
-    <AppCommonData
-      :data="fmsData"
-      @unit-selection="changeUnit"
-      :searchValue="searchValue"
-      @changeSearchValue="changeSearchValue"
-      v-if="activeUnit === 'main'"
-    />
-    <AppUnit
-      v-else
-      :data="unitInformation"
-      :searchValue="searchValue"
-      @changeSearchValue="changeSearchValue"
-    />
-  </transition-group>
+  <AppCommonData
+    :data="fmsData"
+    @unit-selection="changeUnit"
+    :searchValue="searchValue"
+    @changeSearchValue="changeSearchValue"
+    v-if="activeUnit === 'main'"
+  />
+  <AppUnit
+    v-else
+    :data="unitInformation"
+    :searchValue="searchValue"
+    @changeSearchValue="changeSearchValue"
+  />
 </template>
 
 <script setup>

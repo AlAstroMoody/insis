@@ -15,3 +15,31 @@ body {
   Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   color: var(--color);
 }
+
+
+// element 
+.el-pagination {
+  padding: 0 !important;
+  margin: 16px 0;
+}
+
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li {
+  background: transparent !important;
+}
+
+.el-pagination.is-background .el-pager li:not(.is-disabled).is-active {
+  border-radius: 50%;
+  background: #E4E4E4 !important;
+}
+
+.el-pagination button, .el-pagination span:not([class*=suffix]) {
+  font-weight: 600 !important;
+	font-size: 16px !important;
+	line-height: 23px !important;
+}
+
+.el-pager li {
+  font-weight: 600;
+	font-size: 16px;
+	line-height: 23px;
+}
